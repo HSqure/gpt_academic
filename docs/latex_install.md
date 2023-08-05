@@ -1,16 +1,16 @@
-# Windows操作系统
+# Windows
 
 1. 使用方法一（见README.md），安装本项目
 2. 安装Texlive
 3. 确保pdflatex在PATH环境变量中（一般会第2步自动完成）
 4. 确保系统中安装了宋体、黑体、楷体等中文字体
 
-# Ubuntu（方法1-docker）
+# Ubuntu docker
 
 1. 使用docker-compose.yml中的方案4运行本项目
 
 
-# Ubuntu20.04（方法2-apt源安装）
+# Ubuntu20.04 pt源
 
 ## 1. 使用任意方法安装本项目
 确保按步骤完成。
