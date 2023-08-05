@@ -15,7 +15,7 @@
 1. 使用任意方法安装本项目
 2. 安装Texlive
 3. 确保pdflatex在PATH环境变量中（一般会第2步自动完成）
-4. 请想办法合法获取以下字体，并复制到Latex的字体目录`/usr/local/texlive/2023/texmf-dist/fonts/truetype`
+4. 将字体目录下的所有文件复制到Latex的字体目录`/usr/local/texlive/2023/texmf-dist/fonts/truetype`
 ```
 MSYHBD.TTC  SIMLI.TTF  msyh.ttc simfang.ttf  simkai.ttf  SIMYOU.TTF  msyhbd.ttc  simhei.ttf   simsun.ttc
 ```
