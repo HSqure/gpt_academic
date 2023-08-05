@@ -10,7 +10,7 @@
 1. 使用docker-compose.yml中的方案4运行本项目
 
 
-# Ubuntu20.04 pt源
+# Ubuntu20.04 apt源
 
 ## 1. 使用任意方法安装本项目
 确保按步骤完成。
