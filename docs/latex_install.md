@@ -33,7 +33,21 @@ MSYHBD.TTC  SIMLI.TTF  msyh.ttc simfang.ttf  simkai.ttf  SIMYOU.TTF  msyhbd.ttc 
 ```shell
 sudo texhash
 ```
-
+### 2.4 Hello World测试
+可以编译一个简短的测试文件：
+```tex
+% hello.tex
+\documentclass[UTF8]{ctexart}
+\begin{document}
+欢迎来到 \TeX{} 世界！
+\end{document}
+```
+用 `xelatex`,`pdflatex` 或 `lualatex`编译：
+```shell
+xelatex hello
+lualatex hello
+/usr/bin/pdflatex hello
+```
 ### 2附 安装 Tex Studio（属于letex编译的IDE界面，非必须）
 命令行中执行：
 ```shell
