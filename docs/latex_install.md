@@ -1,4 +1,4 @@
-# Windows操作系统（推荐）
+# Windows操作系统
 
 1. 使用方法一（见README.md），安装本项目
 2. 安装Texlive
