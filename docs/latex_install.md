@@ -35,14 +35,14 @@ sudo texhash
 ```
 
 ### 2附 安装 Tex Studio（属于letex编译的IDE界面，非必须）
->命令行中执行：
->```shell
+命令行中执行：
+```shell
 sudo apt install texstudio -y
 ```
->或者可以通过官网 [TeXstudio - A LaTeX editor](https://texstudio.sourceforge.net/) 介绍的方法进行安装。
->打开Tex Studio后在菜单栏中找到Options点击Configure TeXstudio找到Commands进行相应的配置（也可以暂不配置，我没有在这里配置路径也依然可以正常编译预览并生成PDF文件）：
+或者可以通过官网 [TeXstudio - A LaTeX editor](https://texstudio.sourceforge.net/) 介绍的方法进行安装。
+打开Tex Studio后在菜单栏中找到Options点击Configure TeXstudio找到Commands进行相应的配置（也可以暂不配置，我没有在这里配置路径也依然可以正常编译预览并生成PDF文件）：
 
->- 配置 `latex` `pdflatex` `xeflatex` `lualatex` 的路径。
->- 配置 `bibtex` `bibtex8` `biber` 的路径。
->- 这几个路径可以通过在终端中通过`which latex、which bibtex`等进行查找。
+- 配置 `latex` `pdflatex` `xeflatex` `lualatex` 的路径。
+- 配置 `bibtex` `bibtex8` `biber` 的路径。
+- 这几个路径可以通过在终端中通过`which latex、which bibtex`等进行查找。
 
