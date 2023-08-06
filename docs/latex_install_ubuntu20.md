@@ -34,7 +34,6 @@ sudo texhash
 ```shell
 xelatex hello
 lualatex hello
-/usr/bin/pdflatex hello
 ```
 ### 2附 安装 Tex Studio（属于letex编译的IDE界面，非必须）
 命令行中执行：
