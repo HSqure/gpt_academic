@@ -35,7 +35,7 @@ sudo texhash
 xelatex hello
 lualatex hello
 ```
-### 2附 安装 Tex Studio（属于letex编译的IDE界面，非必须）
+### 附:安装 Tex Studio（属于letex编译的IDE界面，非必须）
 命令行中执行：
 ```shell
 sudo apt install texstudio -y
