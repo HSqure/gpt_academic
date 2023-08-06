@@ -22,7 +22,7 @@ MSYHBD.TTC  SIMLI.TTF  msyh.ttc simfang.ttf  simkai.ttf  SIMYOU.TTF  msyhbd.ttc 
 sudo texhash
 ```
 ### 2.4 Hello World测试
-可以编译一个简短的测试文件：
+可以编译一个简短的测试文件`hello.tex`：
 ```tex
 % hello.tex
 \documentclass[UTF8]{ctexart}
