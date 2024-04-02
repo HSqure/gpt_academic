@@ -59,3 +59,43 @@ sudo apt install texstudio -y
 - 配置 `bibtex` `bibtex8` `biber` 的路径。
 - 这几个路径可以通过在终端中通过`which latex、which bibtex`等进行查找。
 
+# 新版本修复补丁
+
+## Temporary Solution
+- Enter the tex project path `/home/user-name/arxiv_cache/2001.01568/workfolder`(for example). 
+- Delete the temporary files (.aux, .bbl, .bcf). Rebuild the project such as:
+  ```shell
+  pdflatex merge_translate_zh.tex
+  ``` 
+> [!NOTE]
+>  If the problems persist, make sure both biblatex and BIber are up to date and their versions match. See [troubleshooting for Biber](http://tex.stackexchange.com/q/286706/35864) for general advice on that matter. This solution works for me.
+
+## Solution (For ubuntu)
+It's just need to update biblatex and BIber version. How to update biblatex and BIber version?
+- Step 1: 
+  ```shell
+  sudo apt-get install texlive-full
+  sudo apt-get remove biber
+  sudo apt-get remove biblatex
+  ```
+- Step 2:
+  Download latest `biber` binary [biber-linux_x86_64.tar.gz](http://sourceforge.net/projects/biblatex-biber/).
+  download  latest `biblatex` source [biblatex-3.20.tds.tgz](http://sourceforge.net/projects/biblatex/). 
+  ```shell
+  mkdir tempbiber
+  mkdir tempbiblatex
+  tar -zxvf biber-linux_x86_64.tar.gz -C tempbiber/
+  tar -zxvf biblatex-2.8a.tds.tgz -C tempbiblatex/
+  sudo rsync -azvv tempbiber/ /usr/bin/
+  #sudo rsync -azvv tempbiblatex/ /usr/share/texlive/texmf-dist/
+  sudo rsync -azvv tempbiblatex/ /usr/local/share/texmf/
+  ```
+- Step 3:
+  Relaunch `gpt_academic`.
+  ```shell
+  python main.py
+  ``` 
+Sorry I can't verify if it's work on `Windows`, anyway it works fine on my `Ubuntu 20.04`. For reference try this out and have a good luck!
+
+## Reference
+> [How to upgrade 'biblatex' properly?](https://tex.stackexchange.com/questions/84624/how-to-upgrade-biblatex-properly)
